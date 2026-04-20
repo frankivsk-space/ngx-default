@@ -1,0 +1,16 @@
+@use 'tailwindcss';
+@use './styles/theme';
+
+html,
+body {
+	background: var(--c-bg-primary);
+	color: var(--c-text-primary);
+	font-family: var(--ff-base);
+	font-size: var(--fs);
+	letter-spacing: var(--letter-spacing);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+}
