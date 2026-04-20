@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var e={"Go to homepage":"T\xE9igh go dt\xED an leathanach baile","Switch to dark mode":"Athraigh go m\xF3d dorcha","Switch to light mode":"Athraigh go m\xF3d geal","Open language menu":"Oscail roghchl\xE1r teanga","Switch language to":"Athraigh an teanga go"},o=Object.entries(e).map(([a,t])=>({sourceText:a,text:t}));export{e as ga,o as gaTranslates};

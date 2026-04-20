@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var r={"Go to homepage":"Aller \xE0 la page d'accueil","Switch to dark mode":"Passer en mode sombre","Switch to light mode":"Passer en mode clair","Open language menu":"Ouvrir le menu des langues","Switch language to":"Passer la langue \xE0"},t=Object.entries(r).map(([e,a])=>({sourceText:e,text:a}));export{r as fr,t as frTranslates};

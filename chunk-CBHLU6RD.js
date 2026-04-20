@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var a={"Go to homepage":"Mine avalehele","Switch to dark mode":"L\xFClitu tumedale re\u017Eiimile","Switch to light mode":"L\xFClitu heledale re\u017Eiimile","Open language menu":"Ava keelemen\xFC\xFC","Switch language to":"Vaheta keel keeleks"},l=Object.entries(a).map(([e,t])=>({sourceText:e,text:t}));export{a as et,l as etTranslates};

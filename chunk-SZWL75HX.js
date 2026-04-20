@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var a={"Go to homepage":"G\xE5 till startsidan","Switch to dark mode":"Byt till m\xF6rkt l\xE4ge","Switch to light mode":"Byt till ljust l\xE4ge","Open language menu":"\xD6ppna spr\xE5kmenyn","Switch language to":"Byt spr\xE5k till"},o=Object.entries(a).map(([t,e])=>({sourceText:t,text:e}));export{a as sv,o as svTranslates};

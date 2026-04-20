@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var t={"Go to homepage":"Pojdi na doma\u010Do stran","Switch to dark mode":"Preklopi v temni na\u010Din","Switch to light mode":"Preklopi v svetli na\u010Din","Open language menu":"Odpri meni jezikov","Switch language to":"Preklopi jezik na"},a=Object.entries(t).map(([e,o])=>({sourceText:e,text:o}));export{t as sl,a as slTranslates};

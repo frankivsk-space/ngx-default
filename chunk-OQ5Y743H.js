@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var n={"Go to homepage":"Ga naar de homepage","Switch to dark mode":"Schakel naar donkere modus","Switch to light mode":"Schakel naar lichte modus","Open language menu":"Taalmenu openen","Switch language to":"Taal wijzigen naar"},o=Object.entries(n).map(([e,a])=>({sourceText:e,text:a}));export{n as nl,o as nlTranslates};
