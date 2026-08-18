@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>frankivsk-space</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      try {
+        const storedMode = localStorage.getItem('app-mode');
+        const preferredMode =
+          storedMode === 'dark' || storedMode === 'light'
+            ? storedMode
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light';
+        document.documentElement.setAttribute('data-mode', preferredMode);
+      } catch {}
+    </script>
+
+    <meta
+      name="description"
+      content="frankivsk-space - web and mobile app development, IT education, internships, and digital solutions for businesses in Frankivsk and beyond."
+    />
+    <meta name="author" content="frankivsk-space Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+
+    <meta itemprop="name" content="frankivsk-space" />
+    <meta
+      itemprop="description"
+      content="Web and mobile app development, IT education, internships, and digital products by frankivsk-space."
+    />
+    <meta itemprop="image" content="https://frankivsk.space/logo.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="frankivsk-space" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:url" content="https://frankivsk.space/" />
+    <meta property="og:title" content="frankivsk-space" />
+    <meta
+      property="og:description"
+      content="Web and mobile app development, IT education, internships, and digital solutions for businesses."
+    />
+    <meta property="og:image" content="https://frankivsk.space/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="frankivsk-space" />
+    <meta
+      name="twitter:description"
+      content="Web and mobile app development, IT education, internships, and digital solutions for businesses."
+    />
+    <meta name="twitter:image" content="https://frankivsk.space/logo.png" />
+    <meta name="twitter:image:src" content="https://frankivsk.space/logo.png" />
+
+    <link rel="canonical" href="https://frankivsk.space/" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>
