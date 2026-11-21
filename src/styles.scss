@@ -1,0 +1,56 @@
+@use 'tailwindcss';
+@use './styles/theme';
+
+html,
+body {
+	background: var(--c-bg-primary);
+	color: var(--c-text);
+	font-family: var(--ff-base);
+	font-size: var(--fs);
+	letter-spacing: var(--letter-spacing);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+}
+
+.theme-interactive {
+	transition-duration: var(--motion-fast);
+	transition-property: background-color, border-color, box-shadow, color, opacity, transform;
+	transition-timing-function: var(--easing);
+}
+
+.theme-focus {
+	&:focus-visible {
+		outline: none;
+		box-shadow: var(--focus-ring);
+	}
+}
+
+/* Keep icon ligatures available locally and reserve their width while the font loads. */
+@font-face {
+	font-family: 'Material Symbols Outlined';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('/fonts/material-symbols-outlined.woff2') format('woff2');
+}
+
+.material-symbols-outlined {
+	display: inline-block;
+	flex-shrink: 0;
+	width: 1em;
+	overflow: hidden;
+	font-family: 'Material Symbols Outlined';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-transform: none;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}

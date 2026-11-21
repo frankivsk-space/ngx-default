@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="uk" data-startup-language="ua">
+	<head>
+		<meta charset="utf-8" />
+		<title>Frankivsk Space</title>
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			try {
+				const storedMode = localStorage.getItem('theme.mode');
+				const preferredMode = storedMode === 'dark' || storedMode === 'light' ? storedMode : 'light';
+				localStorage.setItem('theme.mode', preferredMode);
+				document.documentElement.setAttribute('data-mode', preferredMode);
+			} catch {}
+		</script>
+
+		<meta
+			name="description"
+			content="Frankivsk Space — розробка веб- та мобільних додатків, ІТ-освіта, стажування та цифрові рішення для бізнесу в Івано-Франківську та за його межами."
+		/>
+		<meta name="author" content="Команда Frankivsk Space" />
+		<meta name="robots" content="index, follow" />
+		<!-- Light --c-bg-primary (the page background); the app updates it to the active mode. -->
+		<meta name="theme-color" content="#f5f8fc" />
+
+		<meta itemprop="name" content="Frankivsk Space" />
+		<meta
+			itemprop="description"
+			content="Розробка веб- та мобільних додатків, ІТ-освіта, стажування та цифрові продукти від Frankivsk Space."
+		/>
+		<meta itemprop="image" content="https://ngx.frankivsk.space/logo.png" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Frankivsk Space" />
+		<meta property="og:locale" content="uk_UA" />
+		<meta property="og:url" content="https://ngx.frankivsk.space/" />
+		<meta property="og:title" content="Frankivsk Space" />
+		<meta
+			property="og:description"
+			content="Розробка веб- та мобільних додатків, ІТ-освіта, стажування та цифрові рішення для бізнесу."
+		/>
+		<meta property="og:image" content="https://ngx.frankivsk.space/logo.png" />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Frankivsk Space" />
+		<meta
+			name="twitter:description"
+			content="Розробка веб- та мобільних додатків, ІТ-освіта, стажування та цифрові рішення для бізнесу."
+		/>
+		<meta name="twitter:image" content="https://ngx.frankivsk.space/logo.png" />
+		<meta name="twitter:image:src" content="https://ngx.frankivsk.space/logo.png" />
+
+		<link rel="canonical" href="https://ngx.frankivsk.space/" />
+		<link rel="icon" type="image/png" href="favicon.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+		<!-- Startup screen (ngx-ui provideStartup): decide before first paint whether to cover the page. -->
+		<script>
+			(function () {
+				var root = document.documentElement;
+				var show = root.getAttribute('data-startup') === 'always';
+				if (!show) {
+					try {
+						// ngx-translate saves the language through the ngx-core store, which prefixes keys
+						// with 'waStore' by default (provideNgxCore({ store: { prefix } })).
+						var language = localStorage.getItem('waStoretranslate.language');
+						var base = root.getAttribute('data-startup-language');
+						show = !!language && !!base && language !== base;
+					} catch (e) {}
+				}
+				if (show) {
+					root.classList.add('wstartup-pending');
+					// Safety net in case the app bundle never starts.
+					setTimeout(function () {
+						root.classList.remove('wstartup-pending');
+					}, 15000);
+				}
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="wstartup" class="wstartup" role="status" aria-live="polite">
+			<div class="wstartup__content">
+				<img class="wstartup__logo" src="logo.png" alt="" width="64" height="64" />
+				<svg class="wstartup__spinner" viewBox="0 0 50 50" aria-hidden="true">
+					<circle class="wstartup__track" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+					<circle class="wstartup__arc" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+				</svg>
+				<span class="wstartup__label">Завантаження</span>
+			</div>
+		</div>
+		<app-root></app-root>
+	</body>
+</html>

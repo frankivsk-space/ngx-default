@@ -1,0 +1,21 @@
+:host {
+	display: block;
+	position: relative;
+	z-index: 50;
+	overflow: visible;
+}
+
+/* The mode icon follows <html data-mode> (set before first paint), not the hydrated signal. */
+.topbar-mode-icon--dark {
+	display: none;
+}
+
+:host-context(html[data-mode='dark']) {
+	.topbar-mode-icon--light {
+		display: none;
+	}
+
+	.topbar-mode-icon--dark {
+		display: inline-block;
+	}
+}
